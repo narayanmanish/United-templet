@@ -49,7 +49,7 @@
         <!----Menu start---->
          
         </div>
-        <div class="col-md-12">
+        <div class="col-md-12" style="padding-top: 5px;">
           <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
    <a class="navbar-brand" href="#">
@@ -61,21 +61,60 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link active " aria-current="page" href="#"><h3 class="bi bi-house-fill"></h3></a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            
-          </ul>
-        </li>
+       
+        
+        
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+
+       <li> <!-- Button trigger modal -->
+<a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
+ Admission Enquiry
+</a></li>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Admission Open</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+       <form action="post">
+        <p><input type="text" class="form-control" required name="name" placeholder="Enter Student Name"></p>
+        <p><input type="email" class="form-control" required name="email" placeholder="Enter Email ID"></p>
+        <p><input type="text" class="form-control" required name="mobile" placeholder="Enter Moblie No"></p>
+        <p><input type="text" class="form-control" required name="address" placeholder="Enter Postal Address"></p>
+         <p>
+           <select class="form-control">
+          
+            <option value="Allhabad">Allhabad</option>
+            <option value="Delhi-NCR">Delhi-NCR</option>
+             
+           </select>
+         </p>
+         <p>
+           <select class="form-control">
+          
+            <option value="B-Tech">B-Tech</option>
+            <option value="BBA">BBA</option>
+            <option value="BCA">BCA</option>
+             
+           </select>
+         </p>
+       </form>
+      </div>
+      <div class="modal-footer">
+        
+        <button type="button" class="btn btn-primary">Submit</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
         
       </ul>
       
@@ -94,7 +133,7 @@
 <!--- Container start for img and Form ------->
 <div class="container">
  
-  <div class="row g-2">
+  <div class="row g-2" style="padding-top: 5px;">
 
     <!----- Banner 1st Start---->
     <div class=" col-md-8">
@@ -113,24 +152,21 @@
     
   
       <form >
-  <div>
+ 
     <label for="name" class="form-label">Name</label>
     <input type="text" required class="form-control" id="" placeholder="Enter Your Name">
-  </div>
-  <div >
+ 
     <label for="contact" class="form-label">Contact No</label>
     <input type="text" required class="form-control" id="" placeholder="Enter Contact Number">
-  </div>
-  <div>
+  
     <label for="inputAddress" class="form-label">Address</label>
     <input type="text" required class="form-control" id="inputAddress" placeholder="Enter Address">
-  </div>
-  <div>
+ 
     <label for="Collage" class="form-label">Collage Name</label>
     <input type="text" required class="form-control" id="" placeholder="Enter Your Collage name">
-  </div>
-  <div>
-    <label for="inputState" class="form-label">State</label>
+ 
+  
+    <label for="inputState" class="form-label">Subject</label>
     <select id="inputState" class="form-select">
       <option selected>Choose Subject</option>
       <option>Math</option>
@@ -139,9 +175,9 @@
       <option>Hindi</option>
       <option>Computer Science</option>
     </select>
-  </div>
   
-  <div class="d-grid ">
+  
+  <div class="d-grid " style="padding-top: 3px">
     <button type="submit" class="btn btn-success ">Submit</button>
   </div>
 </form>
